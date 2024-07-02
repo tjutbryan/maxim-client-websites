@@ -1,0 +1,23 @@
+---
+import productImg from '@/assets/product.png';
+import { Image } from 'astro:assets';
+---
+
+<div id='produk' class='bg-[#0D1214]'>
+  <div class='container grid md:grid-cols-2 gap-2 py-10 md:py-20'>
+    <div class='flex justify-center'>
+      <Image src={productImg} alt='Product Golden Trees Honey Wine' />
+    </div>
+    <div class='flex flex-col justify-center'>
+      <h2 class='text-4xl text-primary mb-6'>Apa itu Honey Wine ?</h2>
+      <p class='max-w-lg'>
+        The Golden Trees Honey Wine merupakan minuman kesehatan yang terbuat dari fermentasi <span
+          class='text-primary'>MADU HUTAN</span
+        >, <span class='text-primary'>LEMON</span> dan <span class='text-primary'
+          >ANGGGUR MUSCAT</span
+        >. Minuman ini menjadi SOLUSI TERBAIK untuk mengatasi berbagai macam penyakit seperti
+        AUTOIMUN
+      </p>
+    </div>
+  </div>
+</div>

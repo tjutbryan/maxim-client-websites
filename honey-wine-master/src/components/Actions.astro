@@ -1,0 +1,33 @@
+---
+import { Button } from './ui/button';
+---
+
+<div class='md:relative px-4 py-4 md:py-0'>
+  <div
+    class='md:absolute md:top-1/2 md:left-1/2 md:transform md:-translate-x-1/2 md:-translate-y-1/2 bg-[#1D2224] rounded-xl p-6 md:flex md:items-center gap-3'
+  >
+    <div class='mb-4 md:pr-4 md:mb-0'>
+      <p class='text-xl font-semibold'>Dapatkan Sekarang Juga!</p>
+      <p class='text-[#979797]'>Banyak orang telah membuktikan kedahsyatan manfaatnya</p>
+    </div>
+    <a href='https://shope.ee/8f5jUM4fLF' target='_blank' rel='noopener noreferrer'>
+      <Button
+        type='button'
+        variant={'secondary'}
+        className='mr-2 md:mr-0'
+        aria-label='Button Buy Now'>Buy Now</Button
+      >
+    </a>
+    <a href='https://wa.me/628118826778' target='_blank' rel='noopener noreferrer'>
+      <Button type='button' aria-label='Button Contact Us'>Contact Us</Button>
+    </a>
+  </div>
+</div>
+
+<style>
+  .center-element {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+</style>

@@ -1,0 +1,36 @@
+---
+import { Image } from 'astro:assets';
+import bannerImg from '@/assets/banner-bg.png';
+import { FaCheck } from 'react-icons/fa';
+---
+
+<div id='beranda' class='container pb-10'>
+  <div class='grid grid-cols-1 md:grid-cols-2 gap-4'>
+    <div class='flex items-center'>
+      <div class='space-y-4 py-4'>
+        <h1 class='text-5xl md:text-6xl font-cormorant text-primary'>
+          The Golden Trees Honey Wine
+        </h1>
+        <p class='text-xl'>Solusi untuk mewujudkan kesehatan yang lebih baik.</p>
+        <p class='text-2xl text-primary'>Honey Wine Untuk Anda :</p>
+        <ul class='text-base space-y-2'>
+          {
+            [
+              'Penyintas <strong>Autoimun</strong>',
+              'Active people (<strong>alergi</strong>, <strong>sulit tidur</strong>, <strong>kelelahan kronis</strong>, dsb)',
+              'Senior people (mencegah <strong>demensia</strong>, <strong>radang sendi</strong>, <strong>pengentalan darah</strong>, penyakit degeneratif seperti <strong>jantung</strong>, <strong>stroke</strong>, dsb)',
+              'Pecinta gaya hidup sehat',
+            ].map((item) => (
+              <li class='flex gap-4'>
+                <FaCheck className={'text-primary shrink-0 mt-1'} /> <span set:html={item} />
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </div>
+    <div class='flex flex-col justify-center items-center py-4'>
+      <Image src={bannerImg} alt='The Golden Trees Honey Wine' />
+    </div>
+  </div>
+</div>

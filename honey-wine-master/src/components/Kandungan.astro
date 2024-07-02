@@ -1,0 +1,61 @@
+---
+import { Image } from 'astro:assets';
+import kandungan1 from '@/assets/kandungan-1.png';
+import kandungan2 from '@/assets/kandungan-2.png';
+import kandungan3 from '@/assets/kandungan-3.png';
+import { FaCheck } from 'react-icons/fa';
+---
+
+<div class='container pt-10 md:pt-24 pb-16'>
+  <h2 class='text-4xl text-primary mb-10 text-center font-semibold'>Kandungan Dalam Honey Wine</h2>
+  <div class='grid grid-cols-1 md:grid-cols-3 gap-8 mb-16'>
+    <div>
+      <Image
+        src={kandungan1}
+        alt='Kandungan Madu Hitam'
+        class={'rounded-md w-full aspect-video object-cover mb-2'}
+      />
+      <p class='text-2xl text-primary uppercase py-4 text-center'>Madu Hutan</p>
+      <p class='text-xl text-center'>Kaya dengan Enzym dan Prebiotik</p>
+    </div>
+    <div>
+      <Image
+        src={kandungan2}
+        alt='Kandungan Lemon'
+        class={'rounded-md w-full aspect-video object-cover mb-2'}
+      />
+      <p class='text-2xl text-center text-primary uppercase py-4'>Lemon</p>
+      <p class='text-xl text-center'>Kaya dengan Antioksidan dan Polifenol</p>
+    </div>
+    <div>
+      <Image
+        src={kandungan3}
+        alt='Kandungan Anggur Muscat'
+        class={'rounded-md w-full aspect-video object-cover mb-2'}
+      />
+      <p class='text-2xl text-center text-primary uppercase py-4'>Anggur Muscat</p>
+      <p class='text-xl text-center'>Kaya dengan Polifenol dan Ragi</p>
+    </div>
+  </div>
+  <div class='flex items-center flex-col'>
+    <h3 class='text-2xl text-primary mb-6 max-w-3xl text-center'>
+      Proses Fermentasi Madu Hutan membuat kandungan dalam produk ini menjadi sangat aktif, sehingga
+      bermanfaat untuk :
+    </h3>
+    <ul class='space-y-4'>
+      {
+        [
+          'Meredakan peradangan pada Autoimun, peradangan sendi dan proses peradangan lainnya pada tubuh',
+          'Menghambat kerusakan sel akibat radikal bebas',
+          'Menghambat proses penuaan',
+          'Memperbaiki sirkulasi darah',
+          'Memperbaiki Kesehatan dan stamina pada usia produktif dan usia lanjut',
+        ].map((item: any) => (
+          <li class='flex gap-4 justify-left'>
+            <FaCheck className='text-primary mt-1 shrink-0' /> {item}
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</div>

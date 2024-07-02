@@ -1,0 +1,89 @@
+---
+import '@fontsource/cormorant-sc';
+import '@fontsource/cormorant-garamond';
+import '@fontsource/source-sans-pro/300.css';
+import '@fontsource/source-sans-pro/400.css';
+import '@fontsource/source-sans-pro/600.css';
+import '@fontsource/source-sans-pro/700.css';
+import '@/styles/globals.css';
+import Navbar from './Navbar.astro';
+import Footer from './Footer.astro';
+import Floating from './Floating.astro';
+import SpeedInsights from '@vercel/speed-insights/astro';
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+const gtmId = import.meta.env.PUBLIC_GTM_ID;
+---
+
+<!doctype html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta
+      name='description'
+      content='Golden Trees Honey Wine adalah minuman kesehatan yang terbuat dari fermentasi madu hutan, lemon, dan anggur muscat. Kaya akan zat antioksidan polifenol untuk menangkal radikal bebas. Membantu meningkatkan daya tahan tubuh dan mencegah penuaan dini.'
+    />
+    <meta
+      name='keywords'
+      content='honey wine, obat autoimun, madu hutan, mead, anggur muscat, lupus'
+    />
+    <meta name='viewport' content='width=device-width' />
+    <link rel='icon' type='image/png' href='/favicon.png' />
+    <title>{title}</title>
+    <!-- open graph element -->
+    <meta property='og:title' content={title} />
+    <meta property='og:type' content='website' />
+    <meta property='
+      og:url' content='https: goldentrees-honeywine.id' />
+    <meta property='og:image' content='/banner-bg.png' />
+
+    <link rel="sitemap" href="/sitemap-index.xml" />
+
+    <script is:inline type='application/ld+json'>
+      {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "description": "The Golden Trees Honey Wine merupakan minuman kesehatan yang terbuat dari fermentasi MADU HUTAN, LEMON dan ANGGGUR MUSCAT. Minuman ini menjadi SOLUSI TERBAIK untuk mengatasi berbagai macam penyakit seperti AUTOIMUN",
+        "name": "The Golden Trees Honey Wine",
+        "image": "/banner-bg.png",
+        "offers": {
+          "@type": "Offer",
+          "availability": "https://schema.org/InStock",
+          "price": "700000",
+          "priceCurrency": "IDR"
+        }
+      }
+    </script>
+
+    <!-- Google Tag Manager -->
+    {gtmId && (
+      <>
+      <script async src={"https://www.googletagmanager.com/gtag/js?id=" + gtmId} is:inline></script>
+      <script is:inline define:vars={{gtmId}}>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', gtmId);
+      </script>
+      </>
+    )}
+    <!-- End Google Tag Manager -->
+  </head>
+  <body>
+
+    <SpeedInsights />
+    <header>
+      <Navbar />
+    </header>
+    <slot />
+    <Floating />
+    <footer>
+      <Footer />
+    </footer>
+  </body>
+</html>
+<style is:global></style>

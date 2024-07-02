@@ -1,0 +1,30 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Banner from '@/components/Banner.astro';
+import Actions from '@/components/Actions.astro';
+import Product from '@/components/Product.astro';
+import Kandungan from '@/components/Kandungan.astro';
+import Autoimun from '@/components/Autoimun.astro';
+import Konsumsi from '@/components/Konsumsi.astro';
+import Testimoni from '@/components/Testimoni.astro';
+import Pemesanan from '@/components/Pemesanan.astro';
+
+// Set Cache-Control headers for CDN caching
+Astro.response.headers.set('Cache-Control', 'public, s-maxage=86400, stale-while-revalidate=30');
+---
+
+<Layout title='The Golden Trees Honey Wine'>
+  <main class='pt-16'>
+    <Banner />
+    <Actions />
+    <Product />
+    <Actions />
+    <Kandungan />
+    <Autoimun />
+    <Konsumsi />
+    <Testimoni />
+    <Pemesanan />
+  </main>
+</Layout>
+
+<style></style>

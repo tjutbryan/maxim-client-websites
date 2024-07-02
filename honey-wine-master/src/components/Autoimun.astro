@@ -1,0 +1,55 @@
+---
+import { FaCheck } from 'react-icons/fa';
+import { Image } from 'astro:assets';
+import autoImunImg from '@/assets/autoimun.png';
+import whatIsAutoImunImg from '@/assets/what-is-autoimun.png';
+---
+
+<div class='bg-[#0D1214] py-16'>
+  <div class='container'>
+    <!-- apa itu auto imun + penanganan -->
+    <div class='grid md:grid-cols-2 gap-2 mb-6'>
+      <div>
+        <Image src={whatIsAutoImunImg} alt='What is Autoimun' class='mx-auto mb-8' />
+      </div>
+      <div class='mb-4'>
+        <p class='text-2xl font-bold text-primary mb-4'>Apa itu Penyakit Autoimun ?</p>
+        <p class='mb-2'>
+          Penyakit yang terjadi dimana sistem kekebalan tubuh menyerang sel-sel sehat dalam tubuhnya
+          sendiri.
+        </p>
+
+        <p class='mb-2'>
+          Sistem kekebalan tubuh ini seharusnya melindungi tubuh dari penyakit dan sel jahat,
+          seperti bakteri maupun virus
+        </p>
+        <p class='text-2xl font-bold text-primary mt-8 mb-4'>Gejala Autoimun</p>
+        {
+          [
+            'Rasa lelah yang berlebihan',
+            'Rasa sakit di seluruh tubuh',
+            'Demam yang tidak jelas penyebabnya',
+            'Perubahan berat badan tanpa sebab yang jelas',
+            'Kerontokan rambut',
+            'Ruam pada kulit',
+          ].map((item) => (
+            <div class='flex gap-4 mb-4'>
+              <FaCheck className='text-primary shrink-0 mt-1' />
+              <div>{item}</div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+
+    <!-- jenis penyakit autoimun -->
+    <div class='md:px-20'>
+      <p class='h2 class text-4xl text-primary mb-10 text-center font-semibold'>
+        Ada Lebih dari 100 Jenis Penyakit Autoimun
+      </p>
+      <div>
+        <Image src={autoImunImg} alt='Autoimun' class='mx-auto rounded-xl' />
+      </div>
+    </div>
+  </div>
+</div>

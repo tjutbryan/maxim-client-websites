@@ -1,0 +1,39 @@
+---
+const testimonial = await Astro.glob('../content/testimonial/*.md');
+---
+
+<div id='testimoni' class='container pt-10 md:pt-24 pb-16'>
+  <h2 class='text-4xl text-primary mb-10 text-center font-semibold'>Apa Kata Mereka ?</h2>
+  <div class='overflow-x-auto testi-container'>
+    <div class='flex gap-10'>
+      {
+        testimonial.map((item) => (
+          <div class='shrink-0 w-3/4 md:w-1/4'>
+            <div class='bg-[#0D1214] rounded-xl p-12 testi-content mb-8 italic'>
+              <item.default />
+              <p class='text-center text-lg text-primary'>{item.frontmatter.name}</p>
+              <p class='text-center text-[#D8D8D8]'>{item.frontmatter.note}</p>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</div>
+
+<style is:global>
+  .testi-container::-webkit-scrollbar {
+    height: 5px;
+    background-color: #0d1214;
+  }
+  .testi-container::-webkit-scrollbar-track {
+    background-color: #0d1214;
+  }
+  .testi-container::-webkit-scrollbar-thumb {
+    background: hsl(var(--primary) / 50%);
+    border-radius: 10px;
+  }
+  .testi-content p {
+    margin-bottom: 10px;
+  }
+</style>
