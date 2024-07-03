@@ -3,12 +3,18 @@ import waImg from '@/assets/whatsapp.png';
 import shopeeImg from '@/assets/shopee.png';
 import instagramImg from '@/assets/instagram.png';
 import { Image } from 'astro:assets';
+interface Props {
+  fbc: string;
+}
+
+const { fbc } = Astro.props;
 ---
 
 <div
   class='fixed right-4 bottom-4 md:top-1/2 md:bottom-auto px-4 py-4 rounded-lg bg-[#2F3739]/50 flex flex-col gap-4 md:gap-6 shadow-md shadow-gray-900'
 >
-  <a href={`https://wa.me/628118826778`} target='_blank'>
+  <!-- <a href={`https://wa.me/628118826778`} target='_blank'> -->
+  <a href={`https://maximdigi.com/api/crm/init-conversion?fbc=${fbc}&waNumber=628118826778`} target='_blank'>
     <Image src={waImg} alt='Whatsapp' class={'w-8 md:w-10 h-auto'} />
   </a>
   <a href={`https://shope.ee/8f5jUM4fLF`} target='_blank'>

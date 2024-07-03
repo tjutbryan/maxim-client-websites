@@ -1,6 +1,11 @@
 ---
 import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
 import { TbBrandShopee } from 'react-icons/tb';
+interface Props {
+  fbc: string;
+}
+
+const { fbc } = Astro.props;
 ---
 
 <div class='container md:flex md:justify-between gap-4 py-4 md:py-10'>
@@ -49,7 +54,7 @@ import { TbBrandShopee } from 'react-icons/tb';
       <FaInstagram className='text-2xl' />
     </a>
     <a
-      href='https://wa.me/628118826778'
+      href=`https://maximdigi.com/api/crm/init-conversion?fbc=${fbc}&waNumber=628118826778`
       target='_blank'
       rel='noopener noreferrer'
       class='hover:text-primary/80'

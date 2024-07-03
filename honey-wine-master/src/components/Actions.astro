@@ -1,5 +1,10 @@
 ---
 import { Button } from './ui/button';
+interface Props {
+  fbc: string;
+}
+
+const { fbc } = Astro.props;
 ---
 
 <div class='md:relative px-4 py-4 md:py-0'>
@@ -18,7 +23,7 @@ import { Button } from './ui/button';
         aria-label='Button Buy Now'>Buy Now</Button
       >
     </a>
-    <a href='https://wa.me/628118826778' target='_blank' rel='noopener noreferrer'>
+    <a href={`https://maximdigi.com/api/crm/init-conversion?fbc=${fbc}&waNumber=628118826778`} target='_blank' rel='noopener noreferrer'>
       <Button type='button' aria-label='Button Contact Us'>Contact Us</Button>
     </a>
   </div>

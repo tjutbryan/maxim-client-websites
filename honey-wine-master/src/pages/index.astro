@@ -11,14 +11,15 @@ import Pemesanan from '@/components/Pemesanan.astro';
 
 // Set Cache-Control headers for CDN caching
 Astro.response.headers.set('Cache-Control', 'public, s-maxage=86400, stale-while-revalidate=30');
+const fbc = Astro?.cookies?.get('fbc')?.value ?? '';
 ---
 
-<Layout title='The Golden Trees Honey Wine'>
+<Layout title='The Golden Trees Honey Wine' fbc={fbc}>
   <main class='pt-16'>
     <Banner />
-    <Actions />
+    <Actions fbc={fbc} />
     <Product />
-    <Actions />
+    <Actions fbc={fbc} />
     <Kandungan />
     <Autoimun />
     <Konsumsi />
