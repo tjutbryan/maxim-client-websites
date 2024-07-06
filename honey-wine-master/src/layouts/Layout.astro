@@ -1,22 +1,22 @@
 ---
-import '@fontsource/cormorant-sc';
-import '@fontsource/cormorant-garamond';
-import '@fontsource/source-sans-pro/300.css';
-import '@fontsource/source-sans-pro/400.css';
-import '@fontsource/source-sans-pro/600.css';
-import '@fontsource/source-sans-pro/700.css';
-import '@/styles/globals.css';
-import Navbar from './Navbar.astro';
-import Footer from './Footer.astro';
-import Floating from './Floating.astro';
-import SpeedInsights from '@vercel/speed-insights/astro';
+import '@fontsource/cormorant-sc'
+import '@fontsource/cormorant-garamond'
+import '@fontsource/source-sans-pro/300.css'
+import '@fontsource/source-sans-pro/400.css'
+import '@fontsource/source-sans-pro/600.css'
+import '@fontsource/source-sans-pro/700.css'
+import '@/styles/globals.css'
+import Navbar from './Navbar.astro'
+import Footer from './Footer.astro'
+import Floating from './Floating.astro'
+import SpeedInsights from '@vercel/speed-insights/astro'
 interface Props {
-  title: string;
-  fbc: string;
+  title: string
+  fbc: string
 }
 
-const { title, fbc } = Astro.props;
-const gtmId = import.meta.env.PUBLIC_GTM_ID;
+const { title, fbc } = Astro.props
+const gtmId = import.meta.env.PUBLIC_GTM_ID
 ---
 
 <!doctype html>
@@ -41,7 +41,7 @@ const gtmId = import.meta.env.PUBLIC_GTM_ID;
       og:url' content='https: goldentrees-honeywine.id' />
     <meta property='og:image' content='/banner-bg.png' />
 
-    <link rel="sitemap" href="/sitemap-index.xml" />
+    <link rel='sitemap' href='/sitemap-index.xml' />
 
     <script is:inline type='application/ld+json'>
       {
@@ -60,39 +60,58 @@ const gtmId = import.meta.env.PUBLIC_GTM_ID;
     </script>
 
     <!-- Google Tag Manager -->
-    {gtmId && (
-      <>
-      <script async src={"https://www.googletagmanager.com/gtag/js?id=" + gtmId} is:inline></script>
-      <script is:inline define:vars={{gtmId}}>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', gtmId);
-      </script>
-      </>
-    )}
+    <script is:inline>
+      ;(function (w, d, s, l, i) {
+        w[l] = w[l] || []
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' })
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : ''
+        j.async = true
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl
+        f.parentNode.insertBefore(j, f)
+      })(window, document, 'script', 'dataLayer', 'GTM-KLGVKN2R')
+    </script>
     <!-- End Google Tag Manager -->
     <!-- Meta Pixel Code -->
     <script is:inline>
-      !function(f,b,e,v,n,t,s)
-      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)}(window, document,'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', '1530925264176553');
-      fbq('track', 'PageView');
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments)
+        }
+        if (!f._fbq) f._fbq = n
+        n.push = n
+        n.loaded = !0
+        n.version = '2.0'
+        n.queue = []
+        t = b.createElement(e)
+        t.async = !0
+        t.src = v
+        s = b.getElementsByTagName(e)[0]
+        s.parentNode.insertBefore(t, s)
+      })(
+        window,
+        document,
+        'script',
+        'https://connect.facebook.net/en_US/fbevents.js',
+      )
+      fbq('init', '1530925264176553')
+      fbq('track', 'PageView')
     </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=1530925264176553&ev=PageView&noscript=1"
-    /></noscript>
+    <noscript
+      ><img
+        height='1'
+        width='1'
+        style='display:none'
+        src='https://www.facebook.com/tr?id=1530925264176553&ev=PageView&noscript=1'
+      /></noscript
+    >
     <!-- End Meta Pixel Code -->
   </head>
   <body>
-
     <SpeedInsights />
     <header>
       <Navbar />
