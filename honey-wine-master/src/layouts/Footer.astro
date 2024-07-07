@@ -1,16 +1,18 @@
 ---
-import { FaInstagram, FaWhatsapp } from 'react-icons/fa';
-import { TbBrandShopee } from 'react-icons/tb';
+import { FaInstagram, FaWhatsapp } from 'react-icons/fa'
+import { TbBrandShopee } from 'react-icons/tb'
 interface Props {
-  fbc: string;
+  fbc: string
 }
 
-const { fbc } = Astro.props;
+const { fbc } = Astro.props
 ---
 
 <div class='container md:flex md:justify-between gap-4 py-4 md:py-10'>
   <div>
-    <ul class='font-medium flex justify-center p-4 md:p-0 flex-row md:space-x-8 mt-0'>
+    <ul
+      class='font-medium flex justify-center p-4 md:p-0 flex-row md:space-x-8 mt-0'
+    >
       <li>
         <a
           href={'/#produk'}
@@ -54,7 +56,9 @@ const { fbc } = Astro.props;
       <FaInstagram className='text-2xl' />
     </a>
     <a
-      href=`https://maximdigi.com/api/crm/init-conversion?fbc=${fbc}&waNumber=628118826778`
+      href={fbc
+        ? `https://maximdigi.com/api/crm/init-conversion?fbc=${fbc}&waNumber=628118826778`
+        : `https://wa.me/628118826778`}
       target='_blank'
       rel='noopener noreferrer'
       class='hover:text-primary/80'
