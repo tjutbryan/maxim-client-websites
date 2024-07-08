@@ -36,7 +36,8 @@ import { Textarea } from './ui/textarea'
   </div>
 </div>
 
-<script>
+<script is:inline>
+  const dayaLayer = window.dataLayer || []
   const formPemesanan = document.getElementById('formPemesanan')
   if (formPemesanan) {
     formPemesanan.addEventListener('submit', (e) => {
@@ -54,6 +55,7 @@ import { Textarea } from './ui/textarea'
           .then((res) => res.json())
           .then((res) => {
             console.log(res)
+            dayaLayer.push({ event: 'complete-registration' })
             window.open(
               'https://www.goldentrees-honeywine.id/order-form/thank-you',
               '_blank',
