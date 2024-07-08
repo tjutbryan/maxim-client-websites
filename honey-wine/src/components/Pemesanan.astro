@@ -1,20 +1,26 @@
 ---
-import { Image } from 'astro:assets';
-import pemesananImg from '@/assets/pemesanan.png';
-import { Input } from '@/components/ui/input';
-import { Button } from './ui/button';
-import { Textarea } from './ui/textarea';
+import { Image } from 'astro:assets'
+import pemesananImg from '@/assets/pemesanan.png'
+import { Input } from '@/components/ui/input'
+import { Button } from './ui/button'
+import { Textarea } from './ui/textarea'
 ---
 
 <div id='info-pemesanan' class='bg-[#0D1214]'>
   <div class='container py-20'>
     <div class='grid grid-cols-1 md:grid-cols-2 gap-10'>
       <div class='flex justify-center md:justify-end'>
-        <Image src={pemesananImg} alt='Pemesanan' class={'w-[400px] max-w-[70%] h-auto'} />
+        <Image
+          src={pemesananImg}
+          alt='Pemesanan'
+          class={'w-[400px] max-w-[70%] h-auto'}
+        />
       </div>
       <div class='space-y-2'>
         <h2 class='text-4xl text-primary mb-4 font-semibold'>Pemesanan</h2>
-        <h3 class='text-4xl font-cormorant-garamond'>The Golden Trees Honey Wine</h3>
+        <h3 class='text-4xl font-cormorant-garamond'>
+          The Golden Trees Honey Wine
+        </h3>
         <p class='line-through'>Rp 1.000.000</p>
         <p class='text-primary text-2xl'>Rp 700.000</p>
         <p class=''>Pesan Melalui toko Resmi</p>
@@ -31,14 +37,14 @@ import { Textarea } from './ui/textarea';
 </div>
 
 <script>
-  const formPemesanan = document.getElementById('formPemesanan');
+  const formPemesanan = document.getElementById('formPemesanan')
   if (formPemesanan) {
     formPemesanan.addEventListener('submit', (e) => {
-      e.preventDefault();
+      e.preventDefault()
       if (e.target instanceof HTMLFormElement) {
-        const formData = new FormData(e.target);
-        const data = Object.fromEntries(formData.entries());
-        console.log(data);
+        const formData = new FormData(e.target)
+        const data = Object.fromEntries(formData.entries())
+        console.log(data)
         // window.open(`https://wa.me/628118826778?text=Halo%20saya%20${data.nama}%20${data.pesan}`);
         fetch('/api/send-mail', {
           method: 'POST',
@@ -47,14 +53,17 @@ import { Textarea } from './ui/textarea';
         })
           .then((res) => res.json())
           .then((res) => {
-            console.log(res);
-            window.location.href = '/order-form/thank-you';
+            console.log(res)
+            window.open(
+              'https://www.goldentrees-honeywine.id/order-form/thank-you',
+              '_blank',
+            )
           })
           .catch((err) => {
-            console.error(err);
-            alert('Terjadi kesalahan, silahkan coba lagi');
-          });
+            console.error(err)
+            alert('Terjadi kesalahan, silahkan coba lagi')
+          })
       }
-    });
+    })
   }
 </script>
