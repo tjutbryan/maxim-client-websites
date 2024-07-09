@@ -18,13 +18,9 @@ const { fbc } = Astro.props
       ? `https://maximdigi.com/api/crm/init-conversion?fbc=${fbc}&waNumber=628118826778`
       : `https://wa.me/628118826778`}
     target='_blank'
+    id='floatingWaButton'
   >
-    <Image
-      id='floatingWaButton'
-      src={waImg}
-      alt='Whatsapp'
-      class={'w-8 md:w-10 h-auto'}
-    />
+    <Image src={waImg} alt='Whatsapp' class={'w-8 md:w-10 h-auto'} />
   </a>
   <a href={`https://shope.ee/8f5jUM4fLF`} target='_blank'>
     <Image src={shopeeImg} alt='Shopee' class={'w-8 md:w-10 h-auto'} />
