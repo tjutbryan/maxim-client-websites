@@ -55,14 +55,19 @@ const { fbc } = Astro.props
     >
       <FaInstagram className='text-2xl' />
     </a>
-    <a
-      id='footerWaButton'
-
-      class='hover:text-primary/80'
-      aria-label='Whats App Golden Tree'
-    >
-      <FaWhatsapp className='text-2xl' />
-    </a>
+    <div id='footerWaButton'>
+      <a
+        href={fbc
+          ? `https://maximdigi.com/api/crm/init-conversion?fbc=${fbc}&waNumber=628118826778`
+          : `https://wa.me/628118826778`}
+        target='_blank'
+        rel='noopener noreferrer'
+        class='hover:text-primary/80'
+        aria-label='Whats App Golden Tree'
+      >
+        <FaWhatsapp className='text-2xl' />
+      </a>
+    </div>
     <a
       href='https://shope.ee/8f5jUM4fLF'
       target='_blank'
