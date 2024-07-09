@@ -31,11 +31,10 @@ const { fbc } = Astro.props
 </div>
 
 <script is:inline>
-  const dataLayer = window.dataLayer || []
   const floatingWaButton = document.getElementById('floatingWaButton')
   if (floatingWaButton) {
     floatingWaButton.addEventListener('click', (e) => {
-      dataLayer.push({ event: 'wa-button-clicked' })
+      window?.dataLayer?.push({ event: 'wa-button-clicked' })
     })
   }
 </script>

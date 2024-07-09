@@ -80,12 +80,10 @@ const { fbc } = Astro.props
 </div>
 
 <script is:inline>
-  const dataLayer = window.dataLayer || []
   const footerWaButton = document.getElementById('footerWaButton')
   if (footerWaButton) {
     footerWaButton.addEventListener('click', (e) => {
-      dataLayer.push({ event: 'wa-button-clicked' })
-      console.log(e, dataLayer)
+      window?.dataLayer?.push({ event: 'wa-button-clicked' })
     })
   }
 </script>
