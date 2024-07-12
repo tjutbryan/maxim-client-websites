@@ -20,6 +20,20 @@ Astro.response.headers.set(
 const [fbc, setFbc] = useState('')
 ---
 
+<Layout title='The Golden Trees Honey Wine' fbc={fbc}>
+  <main class='pt-16'>
+    <Banner />
+    <Actions fbc={fbc} />
+    <Product />
+    <Actions fbc={fbc} />
+    <Kandungan />
+    <Autoimun />
+    <Konsumsi />
+    <Testimoni />
+    <Pemesanan />
+  </main>
+</Layout>
+
 <script is:inline>
   let cookies = document.cookie
     .split(';')
@@ -34,19 +48,5 @@ const [fbc, setFbc] = useState('')
   // @ts-ignore
   setFbc(cookies._fbp)
 </script>
-
-<Layout title='The Golden Trees Honey Wine' fbc={fbc}>
-  <main class='pt-16'>
-    <Banner />
-    <Actions fbc={fbc} />
-    <Product />
-    <Actions fbc={fbc} />
-    <Kandungan />
-    <Autoimun />
-    <Konsumsi />
-    <Testimoni />
-    <Pemesanan />
-  </main>
-</Layout>
 
 <style></style>
