@@ -15,9 +15,8 @@ Astro.response.headers.set(
   'Cache-Control',
   'public, s-maxage=86400, stale-while-revalidate=30',
 )
-// const fbc = Astro?.cookies?.get('_fbc')?.value ?? '';
-// import Cookies from 'js-cookie'
-const [fbc, setFbc] = useState('')
+const fbc = Astro?.cookies?.get('_ga')?.value ?? ''
+console.log(fbc)
 ---
 
 <Layout title='The Golden Trees Honey Wine' fbc={fbc}>
@@ -33,20 +32,5 @@ const [fbc, setFbc] = useState('')
     <Pemesanan />
   </main>
 </Layout>
-
-<script is:inline>
-  let cookies = document.cookie
-    .split(';')
-    .map((cookie) => cookie.split('='))
-    .reduce(
-      (accumulator, [key, value]) => ({
-        ...accumulator,
-        [key.trim()]: decodeURIComponent(value),
-      }),
-      {},
-    )
-  // @ts-ignore
-  setFbc(cookies._fbp)
-</script>
 
 <style></style>
