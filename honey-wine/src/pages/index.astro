@@ -15,22 +15,9 @@ Astro.response.headers.set(
   'public, s-maxage=86400, stale-while-revalidate=30',
 )
 // const fbc = Astro?.cookies?.get('_fbc')?.value ?? '';
-import { useState, useEffect } from 'react'
-
-const [fbc, setFbc] = useState<string>('')
-
-// useEffect(() => {
-//   // Function to get a cookie by name
-//   function getCookie(name: string) {
-//     return document.cookie.split('; ').reduce((r, v) => {
-//       const parts = v.split('=')
-//       return parts[0] === name ? decodeURIComponent(parts[1]) : r
-//     }, '')
-//   }
-
-//   // Get the cookie value
-//   setFbc(getCookie('_fbc'))
-// }, [])
+// @ts-ignore
+import Cookies from 'js-cookie'
+const fbc = Cookies.get('_fbc')
 ---
 
 <Layout title='The Golden Trees Honey Wine' fbc={fbc}>
