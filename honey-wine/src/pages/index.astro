@@ -18,6 +18,7 @@ Astro.response.headers.set(
 // @ts-ignore
 import Cookies from 'js-cookie'
 const fbc = Cookies.get('_fbp')
+console.log(fbc)
 ---
 
 <Layout title='The Golden Trees Honey Wine' fbc={fbc}>
