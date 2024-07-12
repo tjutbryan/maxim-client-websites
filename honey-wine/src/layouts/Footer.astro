@@ -57,9 +57,10 @@ const { fbc } = Astro.props
     </a>
     <a
       id='footerWaButton'
-      href={`https://maximdigi.com/api/crm/init-conversion?fbc=${fbc}&waNumber=628118826778`}
+      href={fbc
+        ? `https://maximdigi.com/api/crm/init-conversion?fbc=${fbc}&waNumber=628118826778`
+        : 'https://wa.me/628118826778'}
       target='_blank'
-      rel='noopener noreferrer'
       class='hover:text-primary/80'
       aria-label='Whats App Golden Tree'
     >
