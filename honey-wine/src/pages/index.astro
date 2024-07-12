@@ -19,18 +19,18 @@ import { useState, useEffect } from 'react'
 
 const [fbc, setFbc] = useState<string>('')
 
-useEffect(() => {
-  // Function to get a cookie by name
-  function getCookie(name: string) {
-    return document.cookie.split('; ').reduce((r, v) => {
-      const parts = v.split('=')
-      return parts[0] === name ? decodeURIComponent(parts[1]) : r
-    }, '')
-  }
+// useEffect(() => {
+//   // Function to get a cookie by name
+//   function getCookie(name: string) {
+//     return document.cookie.split('; ').reduce((r, v) => {
+//       const parts = v.split('=')
+//       return parts[0] === name ? decodeURIComponent(parts[1]) : r
+//     }, '')
+//   }
 
-  // Get the cookie value
-  setFbc(getCookie('_fbc'))
-}, [])
+//   // Get the cookie value
+//   setFbc(getCookie('_fbc'))
+// }, [])
 ---
 
 <Layout title='The Golden Trees Honey Wine' fbc={fbc}>
