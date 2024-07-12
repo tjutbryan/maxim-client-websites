@@ -8,14 +8,13 @@ import Autoimun from '@/components/Autoimun.astro'
 import Konsumsi from '@/components/Konsumsi.astro'
 import Testimoni from '@/components/Testimoni.astro'
 import Pemesanan from '@/components/Pemesanan.astro'
-import { useState } from 'react'
 
 // Set Cache-Control headers for CDN caching
 Astro.response.headers.set(
   'Cache-Control',
   'public, s-maxage=86400, stale-while-revalidate=30',
 )
-const fbc = Astro?.cookies?.get('_fbp')?.value ?? ''
+const fbc = Astro?.cookies?.get('_fbc')?.value ?? ''
 console.log(fbc)
 ---
 
