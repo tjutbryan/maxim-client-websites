@@ -8,6 +8,7 @@ import Autoimun from '@/components/Autoimun.astro'
 import Konsumsi from '@/components/Konsumsi.astro'
 import Testimoni from '@/components/Testimoni.astro'
 import Pemesanan from '@/components/Pemesanan.astro'
+import { useState } from 'react'
 
 // Set Cache-Control headers for CDN caching
 Astro.response.headers.set(
@@ -16,20 +17,23 @@ Astro.response.headers.set(
 )
 // const fbc = Astro?.cookies?.get('_fbc')?.value ?? '';
 // import Cookies from 'js-cookie'
-let cookies = document.cookie
-  .split(';')
-  .map((cookie) => cookie.split('='))
-  .reduce(
-    (accumulator, [key, value]) => ({
-      ...accumulator,
-      [key.trim()]: decodeURIComponent(value),
-    }),
-    {},
-  )
-// @ts-ignore
-const fbc = cookies._fbp
-console.log(fbc)
+const [fbc, setFbc] = useState('')
 ---
+
+<script>
+  let cookies = document.cookie
+    .split(';')
+    .map((cookie) => cookie.split('='))
+    .reduce(
+      (accumulator, [key, value]) => ({
+        ...accumulator,
+        [key.trim()]: decodeURIComponent(value),
+      }),
+      {},
+    )
+  // @ts-ignore
+  setFbc(cookies._fbp)
+</script>
 
 <Layout title='The Golden Trees Honey Wine' fbc={fbc}>
   <main class='pt-16'>
