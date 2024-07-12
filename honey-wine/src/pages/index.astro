@@ -1,17 +1,36 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Banner from '@/components/Banner.astro';
-import Actions from '@/components/Actions.astro';
-import Product from '@/components/Product.astro';
-import Kandungan from '@/components/Kandungan.astro';
-import Autoimun from '@/components/Autoimun.astro';
-import Konsumsi from '@/components/Konsumsi.astro';
-import Testimoni from '@/components/Testimoni.astro';
-import Pemesanan from '@/components/Pemesanan.astro';
+import Layout from '../layouts/Layout.astro'
+import Banner from '@/components/Banner.astro'
+import Actions from '@/components/Actions.astro'
+import Product from '@/components/Product.astro'
+import Kandungan from '@/components/Kandungan.astro'
+import Autoimun from '@/components/Autoimun.astro'
+import Konsumsi from '@/components/Konsumsi.astro'
+import Testimoni from '@/components/Testimoni.astro'
+import Pemesanan from '@/components/Pemesanan.astro'
 
 // Set Cache-Control headers for CDN caching
-Astro.response.headers.set('Cache-Control', 'public, s-maxage=86400, stale-while-revalidate=30');
-const fbc = Astro?.cookies?.get('_fbc')?.value ?? '';
+Astro.response.headers.set(
+  'Cache-Control',
+  'public, s-maxage=86400, stale-while-revalidate=30',
+)
+// const fbc = Astro?.cookies?.get('_fbc')?.value ?? '';
+import { useState, useEffect } from 'react'
+
+const [fbc, setFbc] = useState<string>('')
+
+useEffect(() => {
+  // Function to get a cookie by name
+  function getCookie(name: string) {
+    return document.cookie.split('; ').reduce((r, v) => {
+      const parts = v.split('=')
+      return parts[0] === name ? decodeURIComponent(parts[1]) : r
+    }, '')
+  }
+
+  // Get the cookie value
+  setFbc(getCookie('_fbc'))
+}, [])
 ---
 
 <Layout title='The Golden Trees Honey Wine' fbc={fbc}>
