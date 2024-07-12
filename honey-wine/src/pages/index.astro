@@ -20,7 +20,7 @@ Astro.response.headers.set(
 const [fbc, setFbc] = useState('')
 ---
 
-<script>
+<script is:inline>
   let cookies = document.cookie
     .split(';')
     .map((cookie) => cookie.split('='))
