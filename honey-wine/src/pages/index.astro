@@ -14,7 +14,8 @@ Astro.response.headers.set(
   'Cache-Control',
   'public, s-maxage=86400, stale-while-revalidate=30',
 )
-const fbc = Astro?.cookies?.get('_fbc')?.value ?? ''
+
+const fbc = (Astro.cookies.get('_fbc') || {})?.value || ''
 console.log(fbc)
 ---
 
