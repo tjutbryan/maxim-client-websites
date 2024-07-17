@@ -16,7 +16,7 @@ Astro.response.headers.set(
 )
 
 const fbc = (Astro.cookies.get('_fbc') || {})?.value || ''
-console.log(fbc)
+console.log('fbc', fbc)
 ---
 
 <Layout title='The Golden Trees Honey Wine' fbc={fbc}>
