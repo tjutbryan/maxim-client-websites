@@ -30,7 +30,9 @@ const { fbc } = Astro.props
       >
     </a>
     <a
-      href=`https://maximdigi.com/api/crm/init-conversion?text=Halo Golden Trees! Saya mau nanya tentang produk nya&fbc=${fbc}&waNumber=628118826778`
+      href={fbc
+        ? `https://maximdigi.com/api/crm/init-conversion?text=Halo Golden Trees! Saya mau nanya tentang produk nya&fbc=${fbc}&waNumber=628118826778`
+        : 'https://wa.me/628118826778'}
       target='_blank'
     >
       <Button type='button' aria-label='Button Contact Us'>Contact Us</Button>
