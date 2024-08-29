@@ -22,7 +22,11 @@ const { fbc } = Astro.props
   >
     <Image src={waImg} alt='Whatsapp' class={'w-8 md:w-10 h-auto'} />
   </a>
-  <a href={`https://shope.ee/8f5jUM4fLF`} target='_blank'>
+  <a
+    id='floatingShopeeButton'
+    href={`https://shope.ee/8f5jUM4fLF`}
+    target='_blank'
+  >
     <Image src={shopeeImg} alt='Shopee' class={'w-8 md:w-10 h-auto'} />
   </a>
   <a href={`https://www.instagram.com/goldentrees_honeywine`} target='_blank'>
@@ -35,6 +39,13 @@ const { fbc } = Astro.props
   if (floatingWaButton) {
     floatingWaButton.addEventListener('click', (e) => {
       window?.dataLayer?.push({ event: 'wa-button-clicked' })
+    })
+  }
+
+  const floatingShopeeButton = document.getElementById('floatingShopeeButton')
+  if (floatingShopeeButton) {
+    floatingShopeeButton.addEventListener('click', (e) => {
+      window?.dataLayer?.push({ event: 'shopee-button-clicked' })
     })
   }
 </script>

@@ -67,6 +67,7 @@ const { fbc } = Astro.props
       <FaWhatsapp className='text-2xl' />
     </a>
     <a
+      id='footerShopeeButton'
       href='https://shope.ee/8f5jUM4fLF'
       target='_blank'
       rel='noopener noreferrer'
@@ -83,6 +84,13 @@ const { fbc } = Astro.props
   if (footerWaButton) {
     footerWaButton.addEventListener('click', (e) => {
       window?.dataLayer?.push({ event: 'wa-button-clicked' })
+    })
+  }
+
+  const footerShopeeButton = document.getElementById('footerShopeeButton')
+  if (footerShopeeButton) {
+    footerShopeeButton.addEventListener('click', (e) => {
+      window?.dataLayer?.push({ event: 'shopee-button-clicked' })
     })
   }
 </script>
