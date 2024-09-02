@@ -13,13 +13,7 @@ const { fbc } = Astro.props
 <div
   class='fixed right-4 bottom-4 md:top-1/2 md:bottom-auto px-4 py-4 rounded-lg bg-[#2F3739]/50 flex flex-col gap-4 md:gap-6 shadow-md shadow-gray-900'
 >
-  <a
-    href={fbc
-      ? `https://maximdigi.com/api/crm/init-conversion?text=Halo Golden Trees! Saya mau nanya tentang produk nya&fbc=${fbc}&waNumber=628118826778`
-      : 'https://wa.me/628118826778'}
-    target='_blank'
-    id='floatingWaButton'
-  >
+  <a href='https://wa.me/628118826778' target='_blank' id='floatingWaButton'>
     <Image src={waImg} alt='Whatsapp' class={'w-8 md:w-10 h-auto'} />
   </a>
   <a
