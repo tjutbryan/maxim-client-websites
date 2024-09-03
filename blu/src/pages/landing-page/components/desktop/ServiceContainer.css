@@ -1,0 +1,172 @@
+.services-child {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  background-color: #181818;
+  width: 100vw;
+  height: 700px;
+}
+
+.services3 {
+  position: absolute;
+  top: -48px;
+  left: calc(50% - 484px);
+  font-size: 100px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.self-service-icon1 {
+  left: calc(50% - 464px);
+}
+
+.bluetick-icon1,
+.full-service-icon1,
+.self-service-icon1 {
+  position: absolute;
+  top: 186px;
+  width: 221px;
+  height: 220px;
+  object-fit: cover;
+}
+
+.bluetick-icon1 {
+  left: calc(50% + 246px);
+}
+
+.full-service-icon1 {
+  left: calc(50% - 120px);
+}
+
+.self-service-advertising1 {
+  position: absolute;
+  top: 421px;
+  left: calc(50% - 483px);
+  font-size: 24px;
+  line-height: 120%;
+}
+
+.bluetick-verification5,
+.full-service-advertising1 {
+  left: calc(50% - 130px);
+  position: absolute;
+  top: 421px;
+  font-size: 24px;
+  line-height: 120%;
+}
+
+.bluetick-verification5 {
+  left: calc(50% + 250px);
+}
+
+.as-a-professional1,
+.get-access-to1,
+.get-better-engagement1 {
+  position: absolute;
+  top: 465px;
+  left: calc(50% - 474px);
+  line-height: 150%;
+  display: inline-block;
+  width: 240px;
+  height: 143px;
+}
+
+.as-a-professional1,
+.get-better-engagement1 {
+  left: calc(50% - 120px);
+}
+
+.get-better-engagement1 {
+  left: calc(50% + 244px);
+  height: 137px;
+}
+
+.find-our-more3 {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  line-height: 150%;
+  font-weight: 600;
+}
+
+.arrow-right-icon4 {
+  position: absolute;
+  top: 0;
+  left: 104px;
+  width: 31.1px;
+  height: 31.1px;
+  object-fit: contain;
+}
+
+.find-out-more1 {
+  position: absolute;
+  top: 650px;
+  left: calc(50% - 415px);
+  width: 135.1px;
+  height: 31.1px;
+}
+
+.find-out-more-hover-item {
+  position: absolute;
+  top: 29px;
+  left: 1px;
+  border-top: 1.5px solid #fff;
+  box-sizing: border-box;
+  width: 105.5px;
+  height: 1.5px;
+}
+
+.find-out-more-hover1 {
+  position: absolute;
+  top: 650px;
+  left: calc(50% - 60px);
+  width: 135.1px;
+  height: 31.1px;
+}
+
+.find-our-more5 {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  line-height: 150%;
+  background: linear-gradient(90deg, #e22290, #9d84bc 49%, #2baae1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.arrow-right-icon6 {
+  position: absolute;
+  top: 0;
+  left: 105px;
+  width: 31.1px;
+  height: 31.1px;
+  object-fit: contain;
+}
+
+.find-out-more-on-click-item {
+  position: absolute;
+  top: 31px;
+  left: 1px;
+  border-top: 1.5px solid #e22290;
+  box-sizing: border-box;
+  width: 105.5px;
+  height: 1.5px;
+}
+
+.find-out-more-on-click1 {
+  position: absolute;
+  top: 650px;
+  left: calc(50% + 300px);
+  width: 136.1px;
+  height: 31.1px;
+}
+
+.services2 {
+  position: absolute;
+  top: 2318px;
+  width: 100vw;
+  height: 760px;
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+}
