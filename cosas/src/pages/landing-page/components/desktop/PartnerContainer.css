@@ -1,0 +1,107 @@
+.our-partners-child {
+  position: absolute;
+  top: 60.1px;
+  left: 0;
+  border-radius: 68px 0 0 68px;
+  background-color: #eee;
+  width: 1166px;
+  height: 136px;
+}
+
+.partners-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  background: linear-gradient(43.81deg, #e22290, #9d84bc 48%, #2baae1);
+  width: 120px;
+  height: 120px;
+}
+
+.part1 {
+  margin: 0;
+}
+
+.part-ners1 {
+  position: absolute;
+  top: 28px;
+  left: 19px;
+  line-height: 100%;
+  font-weight: 600;
+}
+
+.partners-logo-child5,
+.partners1 {
+  position: absolute;
+  top: 0;
+  left: 964.9px;
+  width: 120px;
+  height: 120px;
+}
+
+.partners-logo-child5 {
+  left: 0;
+  width: 122px;
+  height: 62px;
+  object-fit: cover;
+}
+
+.partners-logo-child6,
+.partners-logo-child7,
+.partners-logo-child8 {
+  position: absolute;
+  top: 0;
+  left: 134px;
+  width: 122px;
+  height: 62px;
+  object-fit: cover;
+}
+
+.partners-logo-child7,
+.partners-logo-child8 {
+  left: 268px;
+}
+
+.partners-logo-child8 {
+  left: 402px;
+}
+
+.partners-logo-child10,
+.partners-logo-child11,
+.partners-logo-child9 {
+  position: absolute;
+  top: 0;
+  left: 536px;
+  width: 122px;
+  height: 62px;
+  object-fit: cover;
+}
+
+.partners-logo-child10,
+.partners-logo-child11 {
+  left: 670px;
+}
+
+.partners-logo-child11 {
+  left: 804px;
+}
+
+.our-partners,
+.partners-logo1 {
+  position: absolute;
+  top: 97.1px;
+  left: 40px;
+  width: 926px;
+  height: 62px;
+}
+
+.our-partners {
+  top: 1946.9px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1166px;
+  height: 196.1px;
+  text-align: center;
+  font-size: 32px;
+  color: #fff;
+}
