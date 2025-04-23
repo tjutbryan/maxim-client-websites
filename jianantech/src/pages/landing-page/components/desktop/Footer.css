@@ -1,0 +1,201 @@
+.image-icon1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1366px;
+  height: 1074px;
+  object-fit: cover;
+}
+
+.footer-inner {
+  position: absolute;
+  top: 524px;
+  left: calc(50% - 635px);
+  border-radius: 40px 40px 0 0;
+  background-color: #181818;
+  width: 1270px;
+  height: 550px;
+}
+
+.maxim-digital1 {
+  position: absolute;
+  top: 658px;
+  left: 200px;
+  line-height: 100%;
+  text-align: left;
+}
+
+.hong-kong-office1,
+.indonesia-office1,
+.singapore-office1 {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  line-height: 100%;
+  font-weight: 500;
+}
+
+.taiwan-office1 {
+  position: absolute;
+  top: 69px;
+  left: 0;
+  font-size: 12px;
+  line-height: 120%;
+  display: inline-block;
+  width: 248px;
+  height: 27px;
+}
+
+.singapore-office1 {
+  top: 120px;
+}
+
+.hong-kong-office1,
+.indonesia-office1 {
+  top: 180px;
+}
+
+.indonesia-office1 {
+  top: 240px;
+}
+
+.the-perfect-digital1 {
+  position: absolute;
+  top: 0;
+  left: 540px;
+  font-size: 48px;
+  line-height: 120%;
+  font-weight: 600;
+  text-align: right;
+  display: inline-block;
+  width: 425px;
+  height: 209px;
+}
+
+.paya-lebar-road1,
+.unit-04-7f2,
+.unit-04-7f3 {
+  position: absolute;
+  top: 140px;
+  left: 0;
+  font-size: 12px;
+  line-height: 120%;
+  display: inline-block;
+  width: 218px;
+  height: 27px;
+}
+
+.unit-04-7f2,
+.unit-04-7f3 {
+  top: 200px;
+}
+
+.unit-04-7f3 {
+  width: 250px;
+  top: 260px;
+}
+
+.office-address1 {
+  position: absolute;
+  top: 658px;
+  left: 200px;
+  width: 967px;
+  height: 316px;
+  text-align: left;
+  font-size: 16px;
+}
+
+.social-media-child2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.artboard-115-1-icon1,
+.social-media-child3,
+.social-media-child4,
+.social-media-child5 {
+  position: absolute;
+  top: 0;
+  left: 120px;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.social-media-child3,
+.social-media-child4,
+.social-media-child5 {
+  left: 60px;
+}
+
+.social-media-child4,
+.social-media-child5 {
+  left: 180px;
+}
+
+.social-media-child5 {
+  left: 240px;
+}
+
+.social-media1 {
+  position: absolute;
+  top: 941px;
+  left: 887px;
+  width: 280px;
+  height: 40px;
+}
+
+.advertising-campaign1,
+.ready-to-start1 {
+  position: absolute;
+  top: 123px;
+  left: calc(50% - 372px);
+  font-size: 56px;
+  line-height: 100%;
+  font-weight: 600;
+}
+
+.advertising-campaign1 {
+  top: 190px;
+  left: calc(50% - 407px);
+  font-size: 70px;
+  background: linear-gradient(90deg, #e22290, #9d84bc 50.5%, #2baae1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.rectangle-div {
+  position: absolute;
+  top: 347px;
+  left: calc(50% - 181px);
+  border-radius: 45px;
+  background-color: #fff;
+  width: 360px;
+  height: 90px;
+}
+
+.get-started1 {
+  position: absolute;
+  top: 367px;
+  left: 554px;
+  font-size: 48px;
+  line-height: 105%;
+  font-weight: 600;
+  color: #0e0e0e;
+}
+
+.footer1 {
+  position: absolute;
+  top: 7240px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1366px;
+  height: 1074px;
+  text-align: center;
+  font-size: 40px;
+  color: #fff;
+}
