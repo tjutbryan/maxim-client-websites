@@ -817,7 +817,7 @@ const Mobile = () => {
             1643-BUENOS AIRES
           </div> */}
 
-          <div className='singapore-office'>JIANAN TECHNOLOGY CO., LIMITED</div>
+          <div className='singapore-office'>HONG KONG BIG BANTOU LIMITED</div>
 
           {/* <div className='hong-kong-office'>Hong Kong Office</div> */}
 
@@ -828,8 +828,7 @@ const Mobile = () => {
           </div>
 
           <div className='paya-lebar-road'>
-            Unit B, 5 / F, Gallo Commercial Building, 114-118 Lockhart Road,
-            Wanchai, Hong Kong, 999077
+            Room 1D, 2/F, FU TAO Building, 98 Argyle Street, Mongkok, Kowloon, Hong Kong
           </div>
 
           {/* <div className='unit-04-7f'>

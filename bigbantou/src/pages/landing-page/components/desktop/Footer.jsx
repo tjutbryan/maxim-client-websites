@@ -13,7 +13,7 @@ const Footer = () => {
       <div className='maxim-digital1'>Maxim Digital</div>
 
       <div className='office-address1'>
-        <div className='singapore-office1'>JIANAN TECHNOLOGY CO., LIMITED</div>
+        <div className='singapore-office1'>HONG KONG BIG BANTOU LIMITED</div>
 
         {/* <div className='hong-kong-office1'>Hong Kong Office</div>
 
@@ -32,8 +32,7 @@ const Footer = () => {
         </div> */}
 
         <div className='paya-lebar-road1'>
-          Unit B, 5 / F, Gallo Commercial Building, 114-118 Lockhart Road,
-          Wanchai, Hong Kong, 999077
+        Room 1D, 2/F, FU TAO Building, 98 Argyle Street, Mongkok, Kowloon, Hong Kong
         </div>
 
         {/* <div className='unit-04-7f2'>
