@@ -1,0 +1,316 @@
+.clients4 {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  font-weight: 600;
+}
+
+.lets-meet-our {
+  position: absolute;
+  top: 125px;
+  left: 0;
+  font-size: 24px;
+  line-height: 120%;
+}
+
+.clients-logo-child,
+.clients-logo-inner,
+.clients-logo-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 121px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.clients-logo-inner,
+.clients-logo-item {
+  left: 141px;
+  width: 120px;
+}
+
+.clients-logo-inner {
+  left: 282px;
+}
+
+.clients-logo-child1,
+.clients-logo-child2,
+.clients-logo-child3,
+.clients-logo-child4 {
+  position: absolute;
+  top: 0;
+  left: 423px;
+  width: 120px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.clients-logo-child2,
+.clients-logo-child3,
+.clients-logo-child4 {
+  left: 564px;
+}
+
+.clients-logo-child3,
+.clients-logo-child4 {
+  left: 705px;
+}
+
+.clients-logo-child4 {
+  left: 846px;
+}
+
+.artboard-42-1-icon2,
+.clients-logo-child5,
+.clients-logo-child6 {
+  position: absolute;
+  top: 81px;
+  left: 0;
+  width: 120px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.artboard-42-1-icon2,
+.clients-logo-child6 {
+  left: 141px;
+}
+
+.clients-logo-child6 {
+  left: 282px;
+}
+
+.clients-logo-child10,
+.clients-logo-child7,
+.clients-logo-child8,
+.clients-logo-child9 {
+  position: absolute;
+  top: 81px;
+  left: 423px;
+  width: 120px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.clients-logo-child10,
+.clients-logo-child8,
+.clients-logo-child9 {
+  left: 564px;
+}
+
+.clients-logo-child10,
+.clients-logo-child9 {
+  left: 705px;
+}
+
+.clients-logo-child10 {
+  left: 846px;
+}
+
+.clients-logo-child11,
+.clients-logo-child12,
+.clients-logo-child13 {
+  position: absolute;
+  top: 162px;
+  left: 0;
+  width: 120px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.clients-logo-child12,
+.clients-logo-child13 {
+  left: 141px;
+}
+
+.clients-logo-child13 {
+  left: 282px;
+}
+
+.clients-logo-child14,
+.clients-logo-child15,
+.clients-logo-child16,
+.clients-logo-child17 {
+  position: absolute;
+  top: 162px;
+  left: 423px;
+  width: 120px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.clients-logo-child15,
+.clients-logo-child16,
+.clients-logo-child17 {
+  left: 564px;
+}
+
+.clients-logo-child16,
+.clients-logo-child17 {
+  left: 705px;
+}
+
+.clients-logo-child17 {
+  left: 846px;
+}
+
+.clients-logo-child18,
+.clients-logo-child19,
+.clients-logo-child20 {
+  position: absolute;
+  top: 243px;
+  left: 0;
+  width: 120px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.clients-logo-child19,
+.clients-logo-child20 {
+  left: 141px;
+}
+
+.clients-logo-child20 {
+  left: 282px;
+}
+
+.clients-logo-child21,
+.clients-logo-child22,
+.clients-logo-child23,
+.clients-logo-child24 {
+  position: absolute;
+  top: 243px;
+  left: 423px;
+  width: 120px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.clients-logo-child22,
+.clients-logo-child23,
+.clients-logo-child24 {
+  left: 564px;
+}
+
+.clients-logo-child23,
+.clients-logo-child24 {
+  left: 705px;
+}
+
+.clients-logo-child24 {
+  left: 846px;
+}
+
+.clients-logo-child25,
+.clients-logo-child26,
+.clients-logo-child27 {
+  position: absolute;
+  top: 324px;
+  left: 0;
+  width: 120px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.clients-logo-child26,
+.clients-logo-child27 {
+  left: 141px;
+}
+
+.clients-logo-child27 {
+  left: 282px;
+}
+
+.clients-logo-child28,
+.clients-logo-child29,
+.clients-logo-child30,
+.clients-logo-child31 {
+  position: absolute;
+  top: 324px;
+  left: 423px;
+  width: 120px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.clients-logo-child29,
+.clients-logo-child30,
+.clients-logo-child31 {
+  left: 564px;
+}
+
+.clients-logo-child30,
+.clients-logo-child31 {
+  left: 705px;
+}
+
+.clients-logo-child31 {
+  left: 846px;
+}
+
+.artboard-70-1-icon2,
+.clients-logo-child32,
+.clients-logo-child33 {
+  position: absolute;
+  top: 405px;
+  left: 0;
+  width: 120px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.artboard-70-1-icon2,
+.clients-logo-child33 {
+  left: 141px;
+}
+
+.clients-logo-child33 {
+  left: 282px;
+}
+
+.clients-logo-child34,
+.clients-logo-child35,
+.clients-logo-child36,
+.clients-logo-child37 {
+  position: absolute;
+  top: 405px;
+  left: 423px;
+  width: 120px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.clients-logo-child35,
+.clients-logo-child36,
+.clients-logo-child37 {
+  left: 564px;
+}
+
+.clients-logo-child36,
+.clients-logo-child37 {
+  left: 705px;
+}
+
+.clients-logo-child37 {
+  left: 846px;
+}
+
+.clients-logo,
+.clients3 {
+  position: absolute;
+  top: 234px;
+  left: 0;
+  width: 966px;
+  height: 465px;
+}
+
+.clients3 {
+  top: 3254px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 699px;
+  text-align: left;
+  font-size: 100px;
+  color: #fff;
+}
