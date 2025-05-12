@@ -817,7 +817,7 @@ const Mobile = () => {
             1643-BUENOS AIRES
           </div> */}
 
-          <div className='singapore-office'>XIAOYU NETWORK TECHNOLOGY CO., LIMITED</div>
+          <div className='singapore-office'>BITFLOW TECH LIMITED</div>
 
           {/* <div className='hong-kong-office'>Hong Kong Office</div> */}
 
@@ -828,7 +828,7 @@ const Mobile = () => {
           </div>
 
           <div className='paya-lebar-road'>
-            Room B, 5/F 114-118 Lockhart Road, Wan Chai, Hong Kong
+            Room A29, 24/F, Hyde Hui, Prince Industrial Building, 706 Prince Road East, Sun Po Kong, Hong Kong
           </div>
 
           {/* <div className='unit-04-7f'>
