@@ -1,0 +1,116 @@
+
+.banner{
+height:680px;
+width:100%;
+background-color: #F9F9F9;
+padding-top: 100px;
+}
+.banner .banner-element{
+width: 100%;
+height: 100%;
+position: relative;
+background:#F9F9F9;
+
+}
+.banner .banner-left{
+    float:left;
+    width: 580px;
+    height: 580px;
+    
+}
+.banner .banner-right{
+    float:left;
+    padding-top: 250px;
+    font-size: 36px;
+    line-height: 1.5;
+    color:#31456A;
+    width: 500px;
+    margin-left: 100px;
+    /* margin-top: 150px; */
+    /* margin-left: 100px; */
+}
+.banner .banner-left img{
+    width: 100%;
+    height: 100%;
+}
+.banner .banner-right .banner-right-title{
+    font-size: 34px;
+    color:#333;
+    margin-bottom: 20px;
+}
+.banner .banner-right .banner-right-text{
+    font-size: 16px;
+    color:#61708D;
+}
+.intro-bg{
+    padding: 100px 0;
+}
+
+.common-block.white{
+    background:#fff;
+}
+.common-block.gray{
+    background:#F9F9F9;
+    padding-bottom: 100px;
+}
+.bottom{
+    background:url("../img/ind-bottom.png") no-repeat;
+    height: 226px;
+    background-size:cover;
+    padding-top: 110px;
+}
+.bottom .bottom-text{
+    padding:40px 60px;
+    border:1px solid #61708D;
+    color:#61708D;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+}
+.intro-bg .intro-inner-bg .intro-text{
+    padding:40px 60px;
+    color:#61708D;
+    text-align: center;
+    line-height: 1.5;
+    border:1px solid #61708D
+}
+.index-element{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+}
+.index-element .index-image{
+    float:left;
+    width: 320px;
+    height: 320px;
+}
+.index-element .index-image img{
+    width: 100%;
+    height: 100%;
+}
+.index-element .index-text{
+    width: 830px;
+    color:#61708D;
+    line-height: 1.5;
+    float:left;
+}
+.customer{
+    padding-top: 50px;
+}
+.banner-text{
+    color:#333;
+    font-size: 32px;
+    padding-top: 300px;
+    position: absolute;
+    top:0px;
+    width:500px;
+    line-height: 1.5;
+}
+.banner-inner{
+    position: absolute;
+    width:659px;
+    height:684px;
+    left:550px;
+    top:150px;
+}

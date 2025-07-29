@@ -1,0 +1,51 @@
+.banner{
+    background:#F9F9F9
+
+}
+.banner-element .mid{
+    overflow: hidden;
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+.banner-left{
+    width: 500px;
+    height: 500px;
+    float:left;
+}
+.banner-right{
+    float:left;
+    width: 600px;
+    margin-left: 100px;
+}
+.banner-right .right-title{
+    font-size: 32px;
+    color:#333;
+    margin-bottom: 50px;
+}
+.banner-right .intro-text{
+    color:#666;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+.content{
+    background:#fff;
+    padding:100px 0;
+}
+.content .service-element{
+
+}
+.service-title{
+    color:#333;
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+.content .service-element .service-text{
+    padding:40px 60px;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 14px;
+    color:#61708D;
+    border:1px solid #61708D;
+    margin-bottom: 50px;
+}

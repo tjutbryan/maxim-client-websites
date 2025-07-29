@@ -1,0 +1,82 @@
+.banner{
+    background:#F9F9F9
+
+}
+.banner-element .mid{
+    overflow: hidden;
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+.banner-left{
+    width: 500px;
+    height: 500px;
+    float:left;
+}
+.banner-right{
+    float:left;
+    width: 600px;
+    margin-left: 100px;
+    margin-top: 100px;
+}
+.banner-right .right-title{
+    font-size: 32px;
+    color:#333;
+    margin-bottom: 50px;
+}
+.banner-right .intro-text{
+    color:#666;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+.content{
+    background:#fff;
+    padding:100px 0;
+}
+.content .about-element{
+
+}
+.about-title{
+    color:#333;
+    font-size: 32px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.content .about-element .about-text{
+    padding:40px 60px;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 14px;
+    color:#61708D;
+    border:1px solid #61708D;
+    margin-bottom: 50px;
+}
+.about-text-2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:50px;
+    border:1px solid #61708D;
+    margin-bottom: 50px;
+}
+.about-text-2 .about-img{
+    width: 220px;
+    height: 220px;
+}
+.about-text-2 .about-img img{
+    width: 100%;
+    height: 100%;
+}
+.about-text-2 .about-text-inner{
+    width: 800px;
+}
+.about-text-2 .about-text-inner .ati-title{
+    font-size: 22px;
+    color:#222;
+    margin-bottom: 50px;
+}
+.about-text-2 .about-text-inner .ati-text{
+    font-size: 14px;
+    color:#333;
+    line-height: 1.5;
+}
